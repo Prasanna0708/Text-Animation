@@ -1,0 +1,67 @@
+body
+{
+    margin:0;
+    padding: 0;
+    background:linear-gradient(rgba(76, 4, 124, 0.459),rgba(76, 4, 124, 0.459)),url(2.jpeg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    font-family: poppins;
+    height: 100vh;
+}
+.block
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.block h1
+{
+    color:#fff;
+    font-size: 4em;
+    padding: 0;
+    margin: 0;
+    text-shadow: 0 2px 0 rgba(0,0,0,0.5)
+}
+.block p
+{
+    color:#fff;
+    font-size: 18px;
+    line-height: 25px;
+}
+.block a
+{
+    text-decoration: none;
+    color:#fff;
+    font-size: 20px;
+    background-color: red;
+    padding:10px 25px;
+    border-radius: 20px;
+    display: inline-block;
+    margin-top: 30px;  
+}
+span::before
+{
+    content:'';
+    animation: animate infinite 5s;
+    color: red;
+}
+@keyframes animate
+{
+    0%
+    {
+        content:'All';
+    }
+    25%
+    {
+        content:"Developers";
+    }
+    75%
+    {
+        content:'Editors, Freelancers';
+    }
+    100%
+    {
+        content:'Bye...';
+    }
+}
